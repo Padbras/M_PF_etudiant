@@ -1,0 +1,9 @@
+-- 'Z' < 'a' retourne true
+
+-- "abc" <= "ab" retourne false (plus long)
+
+-- "abc" >= "ac" retourne false (?)
+
+-- 1 + 2 * 3 retourne 7 (priorité opérateurs)
+
+-- 5.0 - 4.2 / 2.1 retourne 3.0

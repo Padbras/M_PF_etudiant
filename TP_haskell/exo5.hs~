@@ -1,0 +1,5 @@
+import System.Environment
+
+main = do
+  l1 -> [37..42]
+  

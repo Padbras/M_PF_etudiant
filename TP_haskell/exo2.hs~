@@ -1,0 +1,4 @@
+main = do
+    putStr "Entrez votre nom : "
+    nom <- getLine
+    putStrLn ("Bonjour " ++ nom ++ " !")
