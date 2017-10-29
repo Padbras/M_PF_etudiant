@@ -1,4 +1,4 @@
-type Contact = (String, String)
+type Contact = (String, String)    -- (name, email)
 type Base = [Contact]
 
 -- search :: Base -> String -> Bool
