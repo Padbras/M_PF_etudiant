@@ -10,12 +10,18 @@ main = do
 --------------------------------
 
 
---    second xs = head (tail xs)  second::[xs] -> xs
---    swap (x, y) = (y, x) swap::(x,y) -> (x,y)
---    pair x y = (x, y) pair::x,y -> (x,y)
---    double x = x*2 double x->x
---    palindrome xs = reverse xs == xs palindrome::xs->xs
---    twice f x = f (f x) twice::Function, x -> x
+--    second xs = head (tail xs)  	
+--		second::[xs] -> xs
+--    swap (x, y) = (y, x) 
+--		swap::(x,y) -> (y,x)
+--    pair x y = (x, y) 
+--		pair::x -> y -> (x,y)
+--    double x = x*2 
+--		double::Num x => x->x
+--    palindrome xs = reverse xs == xs 
+--		palindrome::Eq xs =>[xs]-> Bool
+--    twice f x = f (f x) 
+--		twice:: (x -> x) -> x -> x
 
 
 -------------------------------
