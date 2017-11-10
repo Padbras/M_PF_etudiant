@@ -21,7 +21,7 @@ OBJ = $(subst $(SRCDIR)/, $(OBJDIR)/, $(SRC:.cpp=.o))
 BIN = $(subst $(SRCDIR)/, $(BINDIR)/, $(MAINSRC:.cpp=.out))
 .PHONY : all clean
 .SECONDARY:
-all: tags $(BIN)
+all: $(BIN)
 $(BINDIR)/%.out: $(OBJ) $(OBJDIR)/%.o
 	mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $@ $^ $(LIBS)
@@ -30,8 +30,4 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	$(CXX) $(CXXFLAGS) -c $<  -o $@
 clean:
 	find $(OBJDIR) -name "*.o" | xargs rm 
-	rm $(BIN) tags
 
-# build ctags data (code navigation)
-tags: $(SRC) $(MAINSRC)
-	ctags -R
