@@ -1,0 +1,14 @@
+import System.Environment
+
+
+mini2 :: Int -> Int  -> Int 
+mini2 x y  = 	if x <= y
+                then x
+                else y
+
+
+
+
+main = do
+ print $ mini2 2 3
+

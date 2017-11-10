@@ -1,0 +1,11 @@
+import System.Environment
+
+
+foisTroisPlusUn :: Num  -> Num
+foisTroisPlunUn x = 
+
+
+
+main = do
+ print $ foisTroisPlusUn 2
+ print $ foisTroisPlusUn 50

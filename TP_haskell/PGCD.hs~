@@ -1,0 +1,7 @@
+pgcd :: Int -> Int -> Int
+pgcd x y = if y == 0
+           then x
+           else pgcd y (x `mod` y)
+
+main = print $ pgcd 10 2
+  

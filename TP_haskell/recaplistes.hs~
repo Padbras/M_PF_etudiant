@@ -1,0 +1,10 @@
+map1 :: (a->b) -> [a] -> [b]
+map1 f a b = 
+
+
+
+
+main = do
+  print $ map (*2) [1..21]
+  print $ map1 (*2) [1..21]
+  print $ map (*2) [1..21]

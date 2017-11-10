@@ -1,0 +1,16 @@
+doublePlusUn :: Integer -> Integer
+doublePlusUn  =  (+1).(2*)
+
+plus42Positif :: Integer -> Bool
+plus42Positif = (<=)0.(+42)
+
+
+
+main = do
+ print $ doublePlusUn 2
+ print $ plus42Positif (-41)
+ print $ plus42Positif (-100)
+
+
+
+  

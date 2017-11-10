@@ -1,0 +1,13 @@
+
+tete :: [a] -> a
+tete = head
+
+main = do
+ print $ doublePlusUn 2
+ print $ plus42Positif (-41)
+ print $ plus42Positif (-100)
+ print $ getElem2'' [2,3,4,5]
+
+
+
+  

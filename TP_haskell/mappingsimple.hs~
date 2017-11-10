@@ -1,0 +1,11 @@
+
+mappingDoubler :: Num a => [a] -> [a]
+mappingDoubler x = map (*2) x
+
+main = do
+ print $ mappingDoubler [2,5,4,6]
+
+
+
+
+  

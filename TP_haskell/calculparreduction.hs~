@@ -1,0 +1,20 @@
+
+factorielleReduction :: Int -> Int 
+factorielleReduction x =
+
+
+--fibonacciReduction :: Num a => [a] -> a
+--fibonacciReduction [] = 0
+--fibonacciReduction (x:xs) = x + reductionSomme' xs
+                  
+
+
+
+main = do
+ print $ factorielleReduction [2,5,4,6]
+-- print $ fibonacciReduction [2,5,4,6]
+
+
+
+
+  

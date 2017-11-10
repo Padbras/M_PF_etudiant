@@ -1,0 +1,20 @@
+
+reductionSomme :: Num a => [a] -> [a]
+reductionSomme x = foldr (+)  x
+
+
+reductionSomme' :: Num a => [a] -> [a]
+reductionSomme' [] = []
+reductionSomme' (x:xs) = x:filtragePairs' xs
+                  
+
+
+
+main = do
+ print $ reductionSomme [2,5,4,6]
+ print $ reductionSomme' [2,5,4,6]
+
+
+
+
+  
