@@ -19,8 +19,7 @@ using expr_t = unique_ptr<Expr>;
 struct ExprAdd : Expr {
   expr_t _e1, _e2;
   int eval() const override {
-    // TODO
-    return 0;
+    return _e1->eval() + _e2.eval();
   }
   ExprAdd(expr_t & e1, expr_t & e2) : _e1(move(e1)), _e2(move(e2)) {}
 };
@@ -28,8 +27,7 @@ struct ExprAdd : Expr {
 struct ExprMul : Expr {
   expr_t _e1, _e2;
   int eval() const override {
-    // TODO
-    return 0;
+ return _e1->eval() * _e2.eval();   
   }
   ExprMul(expr_t & e1, expr_t & e2) : _e1(move(e1)), _e2(move(e2)) {}
 };
@@ -37,8 +35,7 @@ struct ExprMul : Expr {
 struct ExprVal : Expr {
   int _v;
   int eval() const override {
-    // TODO
-    return 0;
+    return _v;
   }
   ExprVal(int v) : _v(v) {}
 };
@@ -49,8 +46,9 @@ using tok_res_t = pair<expr_t, tok_iter_t>;
 
 tok_res_t parse(tok_iter_t iter) {
   if (*iter == "+") {
-    // TODO
-    return {make_unique<ExprVal>(0), iter};
+    ++iter:
+    tok res_t r1 = parse(iter);
+	  return {make_unique<ExprAdd>(e1,e2), iter};
   }
   else if (*iter == "*") {
     // TODO
