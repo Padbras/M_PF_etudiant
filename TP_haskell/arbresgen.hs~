@@ -1,0 +1,19 @@
+data Gengens = Kekun String Gengens Gengens [Gengens] | Personne
+
+showPrenom :: Gengens -> String
+showPrenom Personne = "personne"
+showPrenom (Kekun n _ _ _) = n
+
+
+showPere :: Gengens -> String
+showPrenom Personne = "personne"
+showPrenom (Kekun _ n _ _) = n
+
+
+main = do
+  
+  print $ showPrenom p1
+  where p1 = Gengens("Julius", "", "", ["John", "Alan"])
+  && p2 = Gengens ("Sara", "", "", ["John", "Alan"])
+  && p3 = Gengens ("John", "Julius", "Sara", [""])
+  && p4 = Gengens ("Alan", "Julius", "Sara", [""])

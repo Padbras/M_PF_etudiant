@@ -1,0 +1,12 @@
+#include <algorithm>
+#include <functional>
+#include <iostream>
+
+using namespace std::placeholders;
+
+int main()
+{
+  std::vector<int> liste1 {1,2,3};
+  std::for_each(liste1.begin(), liste1.end(), [](int n){std::cout << n*42 <<' ';});
+  return 0;
+}

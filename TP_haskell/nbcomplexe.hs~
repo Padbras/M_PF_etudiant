@@ -1,0 +1,10 @@
+data Complexe = Complexe
+  { partieReelle :: Float
+  , partieImaginaire :: Float } deriving (Show)
+
+modComp :: Complexe -> Float
+modComp (Complexe r i) = sqrt ( r**2 + i**2)
+
+
+main = do
+  print $ modComp(Complexe 2 3)

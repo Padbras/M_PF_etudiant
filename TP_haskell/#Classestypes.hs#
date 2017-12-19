@@ -1,0 +1,19 @@
+
+data Arbre a = Nil
+                 | Noeud a (Arbre a) (Arbre a)
+
+instance Show Arbre where
+  show (Arbre d) =  
+  (==) (Degre d) (Degre e) = d ==  e
+  (==) a1  a2 = a1 == (convert a2)
+
+
+
+-- recupValeur :: Angle -> Float
+-- recupValeur Degre a = a
+-- recupValeur Radian a = a 
+
+
+main = do
+  print $  x == w
+

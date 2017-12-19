@@ -1,0 +1,5 @@
+instance Show Arbre where
+  
+
+data Arbre a = Nil
+                 | Noeud a (Arbre a) (Arbre a)

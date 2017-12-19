@@ -1,0 +1,27 @@
+#include <algorithm>
+#include <functional>
+#include <iostream>
+
+using namespace std::placeholders;
+
+
+int addition(int x, int y)
+{
+  return x+y;
+}
+
+
+
+
+int main()
+{
+  std::cout << addition(2,3) << std::endl; // Fonction
+  auto addition2 = [](int x, int y){return x+y;}; // Lambda-fonction
+  std::cout << addition2(40,2) << std::endl;
+  std::function<int(int,int)> addition3 = addition;//Objet fonction
+  std::cout << addition3(66,600) << std::endl;
+  std::function<int(int)> addition4 = std::bind(addition, 42, _1);
+  //Fonction évaluation partielle
+  std::cout << addition4(1337) << std::endl;
+  return 0;
+}

@@ -1,0 +1,10 @@
+data Liste = Nil | Cons Int Liste
+
+
+afficherListe :: Liste -> String
+afficherListe Nil = ""
+afficherListe (Cons i l) = show i ++ " " ++ afficherListe l
+
+
+main = do
+  print $ afficherListe [2,3,4,5]

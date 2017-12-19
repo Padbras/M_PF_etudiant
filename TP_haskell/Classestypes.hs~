@@ -1,0 +1,12 @@
+data Angle = Degre Int | Radian Int
+
+
+showPere :: Gengens -> String
+showPere Personne = "personne"
+showPere (Kekun _ n _ _) = showPrenom n
+
+
+main = do
+  
+  print $ a
+  where a = Degre 60
